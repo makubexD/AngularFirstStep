@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World from AngularJs</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/controller.js"></script>
+</head>
+<body>
+    <div ng-app="MyFirstApp" ng-controller="FirstController">
+        <input type="text" ng-model="nuevoComentario.comentario" />
+        <br />
+        <input type="text" ng-model="nuevoComentario.userName" />
+        <br />
+        <button ng-click="agregaComentario()">Add Comment</button>
+        <br />
+        {{"Hola"  + nombre}}
+
+        <h3>Comenatrios</h3>
+        <ul>
+            <li ng-repeat="comentario in comentarios">
+                {{comentario.comentario}} - <strong>{{comentario.userName}}</strong>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
