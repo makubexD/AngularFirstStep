@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app="filterModule">
+<head>
+    <title>.:    Filter Module   :.</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/filterController.js"></script>
+</head>
+<body ng-controller="filterController">
+    {{ htmlTag }}
+    {{ htmlTag | removeHtml}}
+    <br />
+
+    {{ my_Html | json}}
+
+    <br />
+
+    {{ cost | currency : 'S/ '}}
+
+</body>
+</html>
