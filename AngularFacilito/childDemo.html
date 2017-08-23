@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html ng-app="childModule">
+<head>
+    <title>.: --- CHILD -----:.</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/childController.js"></script>
+</head>
+<body ng-controller="dadController">
+    {{nombre}}
+    <p><strong>Valor del padre: </strong> {{$parent.nombre}}</p>
+    <div ng-controller="childController">
+        <p><strong>Valor del Hijo: </strong> {{nombre}}</p>
+        <input type="text" ng-model="$parent.nombre" />
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html ng-app="ngSourceModule">
+<head>
+    <title> .: Ng Source -- Ng Cloak:.</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/ngSourceCloakController.js"></script>
+</head>
+<body ng-controller="ngSourceController">
+    <ul class="no-list" ng-cloak>
+        <li ng-repeat="repo in repos">
+            <img ng-src="{{repo.owner.avatar_url}}" >
+            <h1>{{repo.name}}</h1>
+        </li>
+    </ul>
+</body>
+</html>

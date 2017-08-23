@@ -94,9 +94,22 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ApplyDemo.html" />
+    <Content Include="app\applyController.js" />
+    <Content Include="app\childController.js" />
+    <Content Include="app\factoryController.js" />
     <Content Include="app\filterController.js" />
+    <Content Include="app\hideController.js" />
+    <Content Include="app\ngSourceCloakController.js" />
+    <Content Include="app\serviceController.js" />
     <Content Include="app\toDoController.js" />
+    <Content Include="childDemo.html" />
+    <Content Include="eventsDemo.html" />
+    <Content Include="ngSourceCloakDemo.html" />
+    <Content Include="serviceDemo.html" />
+    <Content Include="factoryDemo.html" />
     <Content Include="filterDemo.html" />
+    <Content Include="HideDemo.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
