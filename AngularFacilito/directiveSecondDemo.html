@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html ng-app="directiveSecondModule">
+<head>
+    <title>.:--- SECOND DIRECTIVE ---:.</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/typeAhead.css" />
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/directiveSecondController.js"></script>
+    <style>
+        .circular {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        .no-list li {
+            list-style-type: none;
+        }
+
+        body, html {
+            text-align: center;
+            background-color: #eee;
+            margin: 0;
+        }
+    </style>
+</head>
+<body ng-controller="secondController">
+    <input type="text" my-autocomplete="repos" placeholder="Search Repos" class="typeahead" />
+    <ul class="no-list">
+        <li ng-repeat="repo in posts" ng-hide="main_repo && main_repo != repo.name">
+            <div class="circular" back-img="{{repo.owner.avatar_url}}"></div>
+            <h1 class="inline-block"> {{repo.full_name}}</h1>
+        </li>
+    </ul>
+    <a ng-click="main_repo = null">Clean Info</a>
+
+</body>
+</html>

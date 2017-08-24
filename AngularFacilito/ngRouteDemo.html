@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html ng-app="ngRouteModule">
+<head>
+    <title>.:--- NG ROUTE DEMO ---:.</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/typeAhead.css" />
+    <script src="Scripts/jquery.js"></script>
+    <script src="Scripts/jquery-ui.min.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="app/nrRouteController.js"></script>
+    <script src="app/directivesGeneric.js"></script>
+    <script src="app/controllerGeneric.js"></script>
+    <style>
+        .circular {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+        }
+
+        .no-list li {
+            list-style-type: none;
+        }
+
+        body, html {
+            text-align: center;
+            background-color: #eee;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div ng-view></div>
+</body>
+</html>
